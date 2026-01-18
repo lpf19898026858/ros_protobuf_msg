@@ -7,8 +7,8 @@ ros-protobuf-bridge是一个基于ROS和Protobuf的桥接项目，旨在实现 R
 2. 兼容性和可扩展性: 基于C++模板编程中的 SFINAE 机制，修改了 roscpp 的核心库 roscpp_serialization 和 roscpp_traits 的底层代码。这样，ros-protobuf-bridge可以同时兼容ROS原生msg和Protobuf消息。  
 3. 项目管理和构建: 使用 cmake 作为项目的构建系统，编写 proto 测试文件生成相应的静态库，供 ros 自定义功能模块调用。简化了项目的管理和构建过程，并提供灵活的扩展机制，便于后续添加复杂数据类型。  
 4. 插件化设计: ros-protobuf-bridge 可以作为一个插件嵌入到各种复杂的ROS功能项目中。通过将该项目中的cmake 指令集成到目标项目中，可以轻松地实现基于proto数据的发布和订阅。
-[pb_talker](https://github.com/lpf19898026858/ros_protobuf_msg/blob/main/pb_talker.png)
-[pb_listener](https://github.com/lpf19898026858/ros_protobuf_msg/blob/main/pb_listener.png)
+![pb_talker](https://github.com/lpf19898026858/ros_protobuf_msg/blob/main/pb_talker.png)
+![pb_listener](https://github.com/lpf19898026858/ros_protobuf_msg/blob/main/pb_listener.png)
 ## 1.通过项目中dockerfile文件，构建项目镜像 
 
 ```bash
