@@ -34,4 +34,4 @@ docker run -it -d \
 -v ${MONITOR_HOME_DIR}:/work \
 -v ${XDG_RUNTIME_DIR}:${XDG_RUNTIME_DIR} \
 --network host \
-ros_protobuf:noetic
+ros_protobuf:2004

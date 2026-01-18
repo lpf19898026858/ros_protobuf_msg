@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package superbai.sample;
+package lpf.sample;
 
 
 message RosProtoTest {
@@ -10,8 +10,4 @@ message RosProtoTest {
   repeated string n = 100;
 }
 
-// message Superbai {
-//   int32 a = 1;
-//   string b = 2;
-// }
 

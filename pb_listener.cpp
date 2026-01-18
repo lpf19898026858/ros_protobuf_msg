@@ -37,17 +37,17 @@
  */
 // %Tag(CALLBACK)%
 // void chatterCallback(
-//     const boost::shared_ptr<superbai::sample::PublishInfo> &msg) {
+//     const boost::shared_ptr<lpf::sample::PublishInfo> &msg) {
 //   std::cerr << "I heard: " << msg->DebugString() << std::endl;
 //   std::string def =
-//       ros::message_traits::Definition<superbai::sample::PublishInfo>::value();
+//       ros::message_traits::Definition<lpf::sample::PublishInfo>::value();
 //   std::cout << "def: " << def << std::endl;
 // }
 void chatterCallback(
-    const ros::MessageEvent<superbai::sample::PublishInfo> &msg) {
+    const ros::MessageEvent<lpf::sample::PublishInfo> &msg) {
   std::cerr << "I heard: " << msg.getMessage()->DebugString() << std::endl;
   std::string def =
-      ros::message_traits::Definition<superbai::sample::PublishInfo>::value();
+      ros::message_traits::Definition<lpf::sample::PublishInfo>::value();
   std::cout << "def: " << def << std::endl;
 }
 // %EndTag(CALLBACK)%
@@ -78,7 +78,7 @@ int main(int argc, char **argv) {
    * throw away the oldest ones.
    */
   // %Tag(SUBSCRIBER)%
-  ros::Subscriber sub = n.subscribe("/Sorbai", 1000, chatterCallback);
+  ros::Subscriber sub = n.subscribe("/Protobuf", 1000, chatterCallback);
   // %EndTag(SUBSCRIBER)%
 
   /**

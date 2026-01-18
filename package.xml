@@ -3,7 +3,7 @@
   <name>myproject</name>
   <version>0.0.0</version>
   <description>proto sample package</description>
-  <maintainer email="superbai@qq.com">superbai</maintainer>
+  <maintainer email="1716837465@qq.com">lpf</maintainer>
   <license>superbai license</license>
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roscpp</build_depend>
